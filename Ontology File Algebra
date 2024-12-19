@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/govindaregmi_ysj/ontologies/2024/11/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/govindaregmi_ysj/ontologies/2024/11/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/govindaregmi_ysj/ontologies/2024/11/untitled-ontology-7/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Equation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equation_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equation_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equation_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iteration_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iteration_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iteration_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multiple_variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#negative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#positive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#single_variable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVariable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSolvedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAnswer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFeedback"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Equation_1"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equation_2"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equation_3"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iteration_1"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iteration_2"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iteration_3"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiple_variable"/>
+        <Class IRI="#Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#negative"/>
+        <Class IRI="#Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#positive"/>
+        <Class IRI="#Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#single_variable"/>
+        <Class IRI="#Variable"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Equation"/>
+        <Class IRI="#Solution"/>
+        <Class IRI="#Step"/>
+        <Class IRI="#User"/>
+        <Class IRI="#Variable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Equation_1"/>
+        <Class IRI="#Equation_2"/>
+        <Class IRI="#Equation_3"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#iteration_1"/>
+        <Class IRI="#iteration_2"/>
+        <Class IRI="#iteration_3"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#multiple_variable"/>
+        <Class IRI="#single_variable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#negative"/>
+        <Class IRI="#positive"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSolution"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStep"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVariable"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSolution"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#Equation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVariable"/>
+        <Class IRI="#Variable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <Class IRI="#Equation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSolution"/>
+        <Class IRI="#Equation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVariable"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAnswer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasFeedback"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
